@@ -14,7 +14,7 @@ const req = https.request(options, (res) => {
   res.on('data', (data) => {
     if (res.statusCode != 202) {
       let parsed = JSON.parse(data)
-      console.log(`Error: ${parsed.message}`)
+      console.log(`Error (${res.statusCode}): ${parsed.message}`)
       process.exit(1)
     } else {
       console.log('Cancelled successfully.')
