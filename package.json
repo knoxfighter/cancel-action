@@ -1,0 +1,23 @@
+{
+  "name": "cancel-action",
+  "version": "0.2.0",
+  "description": "This Action uses the [GitHub API](https://developer.github.com/v3/actions/workflow_runs/#cancel-a-workflow-run) to cancel the currently running workflow. Example usage:",
+  "main": "cancel.js",
+  "scripts": {
+    "build": "tsc && ncc build",
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knoxfighter/cancel-action.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.6"
+  },
+  "bugs": {
+    "url": "https://github.com/knoxfighter/cancel-action/issues"
+  },
+  "homepage": "https://github.com/knoxfighter/cancel-action#readme"
+}
