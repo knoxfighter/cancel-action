@@ -4,8 +4,7 @@
   "description": "This Action uses the [GitHub API](https://developer.github.com/v3/actions/workflow_runs/#cancel-a-workflow-run) to cancel the currently running workflow. Example usage:",
   "main": "cancel.js",
   "scripts": {
-    "build": "tsc && ncc build",
-    "test": "jest --coverage"
+    "build": "ncc build"
   },
   "repository": {
     "type": "git",
