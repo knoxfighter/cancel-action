@@ -1,9 +1,11 @@
 const https = require('https');
+const core = require('@actions/core');
+
 const options = {
   hostname: 'api.github.com',
   path: `/repos/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}/cancel`,
   headers: {
-    'Authorization': `token ${process.env.INPUT_TOKEN}`,
+    'Authorization': `token ${core.getInput('token')}`,
     'Content-Type': 'application/json',
     'User-Agent': 'actions/cancel-action'
   },
